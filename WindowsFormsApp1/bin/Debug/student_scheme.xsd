@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ArrayOfStudent" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ArrayOfStudent" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Student">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="group" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="course" type="xs:string" />
+                  <xs:attribute name="number" type="xs:string" />
+                  <xs:attribute name="track" type="xs:string" />
+                  <xs:attribute name="Student_Id" type="xs:int" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="marks" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SingleMark" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msdata:ColumnName="SingleMark_Text" msdata:Ordinal="0">
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="marks_Id" type="xs:int" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="marks_Id" msdata:AutoIncrement="true" type="xs:int" use="required" />
+                  <xs:attribute name="Student_Id" type="xs:int" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Student_Id" msdata:AutoIncrement="true" type="xs:int" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="marks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//marks" />
+      <xs:field xpath="@marks_Id" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Student" />
+      <xs:field xpath="@Student_Id" />
+    </xs:unique>
+    <xs:keyref name="Student_marks" refer="Constraint1" msdata:IsNested="true">
+      <xs:selector xpath=".//marks" />
+      <xs:field xpath="@Student_Id" />
+    </xs:keyref>
+    <xs:keyref name="marks_SingleMark" refer="marks_Constraint1" msdata:IsNested="true">
+      <xs:selector xpath=".//SingleMark" />
+      <xs:field xpath="@marks_Id" />
+    </xs:keyref>
+    <xs:keyref name="Student_group" refer="Constraint1" msdata:IsNested="true">
+      <xs:selector xpath=".//group" />
+      <xs:field xpath="@Student_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

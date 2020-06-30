@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="yes"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Student Student_Id="0">
+    <name>Студент 0</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="0" />
+    <marks marks_Id="10" Student_Id="0">
+      <SingleMark marks_Id="10">0</SingleMark>
+      <SingleMark marks_Id="10">1</SingleMark>
+      <SingleMark marks_Id="10">2</SingleMark>
+      <SingleMark marks_Id="10">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="1">
+    <name>Студент 1</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="1" />
+    <marks marks_Id="11" Student_Id="1">
+      <SingleMark marks_Id="11">0</SingleMark>
+      <SingleMark marks_Id="11">1</SingleMark>
+      <SingleMark marks_Id="11">2</SingleMark>
+      <SingleMark marks_Id="11">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="2">
+    <name>Студент 2</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="2" />
+    <marks marks_Id="12" Student_Id="2">
+      <SingleMark marks_Id="12">0</SingleMark>
+      <SingleMark marks_Id="12">1</SingleMark>
+      <SingleMark marks_Id="12">2</SingleMark>
+      <SingleMark marks_Id="12">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="3">
+    <name>Студент 3</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="3" />
+    <marks marks_Id="13" Student_Id="3">
+      <SingleMark marks_Id="13">0</SingleMark>
+      <SingleMark marks_Id="13">1</SingleMark>
+      <SingleMark marks_Id="13">2</SingleMark>
+      <SingleMark marks_Id="13">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="4">
+    <name>Студент 4</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="4" />
+    <marks marks_Id="14" Student_Id="4">
+      <SingleMark marks_Id="14">0</SingleMark>
+      <SingleMark marks_Id="14">1</SingleMark>
+      <SingleMark marks_Id="14">2</SingleMark>
+      <SingleMark marks_Id="14">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="5">
+    <name>Студент 5</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="5" />
+    <marks marks_Id="15" Student_Id="5">
+      <SingleMark marks_Id="15">0</SingleMark>
+      <SingleMark marks_Id="15">1</SingleMark>
+      <SingleMark marks_Id="15">2</SingleMark>
+      <SingleMark marks_Id="15">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="6">
+    <name>Студент 6</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="6" />
+    <marks marks_Id="16" Student_Id="6">
+      <SingleMark marks_Id="16">0</SingleMark>
+      <SingleMark marks_Id="16">1</SingleMark>
+      <SingleMark marks_Id="16">2</SingleMark>
+      <SingleMark marks_Id="16">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="7">
+    <name>Студент 7</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="7" />
+    <marks marks_Id="17" Student_Id="7">
+      <SingleMark marks_Id="17">0</SingleMark>
+      <SingleMark marks_Id="17">1</SingleMark>
+      <SingleMark marks_Id="17">2</SingleMark>
+      <SingleMark marks_Id="17">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="8">
+    <name>Студент 8</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="8" />
+    <marks marks_Id="18" Student_Id="8">
+      <SingleMark marks_Id="18">0</SingleMark>
+      <SingleMark marks_Id="18">1</SingleMark>
+      <SingleMark marks_Id="18">2</SingleMark>
+      <SingleMark marks_Id="18">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="9">
+    <name>Студент 9</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="9" />
+    <marks marks_Id="19" Student_Id="9">
+      <SingleMark marks_Id="19">0</SingleMark>
+      <SingleMark marks_Id="19">1</SingleMark>
+      <SingleMark marks_Id="19">2</SingleMark>
+      <SingleMark marks_Id="19">3</SingleMark>
+    </marks>
+  </Student>
+  <Student Student_Id="10">
+    <name>Студент 10</name>
+    <group course="3" number="4" track="ПОКС" Student_Id="10" />
+    <marks marks_Id="20" Student_Id="10">
+      <SingleMark marks_Id="20">5</SingleMark>
+      <SingleMark marks_Id="20">5</SingleMark>
+      <SingleMark marks_Id="20">5</SingleMark>
+      <SingleMark marks_Id="20">5</SingleMark>
+    </marks>
+  </Student>
+</ArrayOfStudent>
